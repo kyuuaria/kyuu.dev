@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-900;
+    background-image: url('/topography.svg');
+  }
+
+  ::selection {
+    @apply bg-zinc-500/30;
+  }
+
+  *::-webkit-scrollbar {
+    @apply w-3.5;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply rounded-lg border-4 border-solid border-zinc-900 bg-zinc-700;
+  }
+}
